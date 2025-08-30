@@ -1,0 +1,25 @@
+# dependencies
+/node_modules/
+
+# production
+/build/
+/dist/
+
+# misc
+.DS_Store
+.env
+*.log
+*.tgz
+node_modules
+# IDE settings
+.vscode/
+.idea/
+
+# testing
+/coverage/
+
+# cache
+.eslintcache
+.parcel-cache
+.cache/
+
