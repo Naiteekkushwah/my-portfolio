@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+html{
+   scroll-behavior: smooth;
+}
+#rigths h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    color: black;
+}
+#rigths h4 {
+  padding: 4px 23px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  overflow: hidden;
+}
+#rigths h4 a{
+  position: relative;
+  z-index:9;
+  font-size: 13px;
+}
+#rigths h4:hover a{
+  color: #000000;
+}
+#rigths h4::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width:100%;
+    left: 0;
+    border-radius:50%;
+    background: #ffffff;
+  bottom: -100%;
+    transition: all ease 0.3s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+#scroll::-webkit-scrollbar{
+  display: none;
+}
+#scrollTriger{
+ animation: scroll 18s infinite linear;
+}
+@keyframes scroll {
+ from { transform: translateX(-1%); }
+  to { opacity: 1; transform: translateX(-100%); }
+}
+
+#scrollTrigerleft{
+ animation: scrollleft 14s infinite linear ;
+}
+@keyframes scrollleft {
+ from { transform: translateX(-75%); }
+  to { opacity: 1; transform: translateX(+0%); }
+}
